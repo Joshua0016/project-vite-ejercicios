@@ -1,0 +1,13 @@
+#app{
+  width: 400px;
+  height: 400px;
+  background-color: aqua;
+  display: flex;
+  align-items: flex-end;
+  border: 1px solid black;
+  justify-content: center;
+}
+#input-group{
+  display: flex;
+  flex-direction: column;
+}
