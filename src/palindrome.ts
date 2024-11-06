@@ -15,8 +15,8 @@ function checkPalindrome(){
   
 
 app.appendChild(input);
-app.appendChild(resultado);
 app.appendChild(button);
+app.appendChild(resultado);
 
 
   button.addEventListener('click', ()=>{
