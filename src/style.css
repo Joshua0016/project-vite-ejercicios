@@ -21,16 +21,28 @@
   flex-direction: column;
 }
 ul{
-  width: 100px;
+  width: 150px;
   border: 1px solid black;
-  height: 100px;
+  max-height: 90px;
   background-color: wheat;
-  overflow: auto;
+  overflow-y: auto;
   margin: 0;
-
 }
 h1{
   position: absolute;
   top: 0;
+  text-align: center;
+}
+.p1{
+  position: absolute;
+  top: 50px;
+}
+.p2{
+  position: absolute;
+  top: 70px;
+}
+.content-scroll{
+  position: absolute;
+  bottom: 10px;
   text-align: center;
 }

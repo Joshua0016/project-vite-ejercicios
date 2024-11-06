@@ -5,12 +5,13 @@ console.log("2-Debe de ingresar un mínimo de 4 números y un máximo de 10");
 
 
 const app = document.getElementById("input-group2") as HTMLElement;
+const contNumber = document.getElementById("content-number") as HTMLElement;
 //Elementos de entrada
 let number  = document.createElement("input") as HTMLInputElement;
 //Botón
 let button = document.createElement("button") as HTMLButtonElement;
 //
-let resultsContainer = document.createElement("div");
+let resultsContainer = document.createElement("div") as HTMLElement;
 
 number.type = "text";
 number.placeholder = "ingresar números separados por coma";
@@ -18,7 +19,7 @@ button.textContent = "multiplicar";
 
 app.appendChild(number);
 app.appendChild(button);
-app.appendChild(resultsContainer);
+contNumber.appendChild(resultsContainer);
 
 
 button.addEventListener("click", ()=>{
@@ -45,14 +46,14 @@ button.addEventListener("click", ()=>{
                     list.appendChild(item);
                     contador+=1;
                 }
-                app.appendChild(list);
+                contNumber.appendChild(list);
                 const br = document.createElement("br");
                 list.appendChild(br);
             }
 
             resultsContainer.appendChild(list);
     } catch (error:any) {
-        resultsContainer.textContent = "Ha ocurrido un erro :"+error.message;
+        resultsContainer.textContent = "Ha ocurrido un error :"+error.message;
     }
 })
 
